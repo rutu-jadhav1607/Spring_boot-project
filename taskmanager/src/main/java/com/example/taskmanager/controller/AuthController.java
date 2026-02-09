@@ -17,7 +17,7 @@ public class AuthController {
         return authService.register(req);
     }
 
-    @PostMapping("/login")
+    @PostMapping("/login") // chnage
     public JwtResponse login(@RequestBody LoginRequest req) {
         return authService.login(req);
     }
@@ -27,4 +27,3 @@ public class AuthController {
         return authService.sendOtp(email);
     }
 }
-
